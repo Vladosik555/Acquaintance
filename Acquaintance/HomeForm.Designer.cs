@@ -55,6 +55,8 @@
             CloseButton = new Button();
             CollapseButton = new Button();
             applicationPanel = new GradientPanel();
+            girlPhoto = new PictureBox();
+            boyPhoto = new PictureBox();
             label2 = new Label();
             gradientPanel3 = new GradientPanel();
             button2 = new Button();
@@ -65,23 +67,21 @@
             gradientPanel6 = new GradientPanel();
             closeAccount = new Button();
             panel1 = new Panel();
-            boyPhoto = new PictureBox();
-            girlPhoto = new PictureBox();
             gradientPanel1 = new GradientPanel();
-            button1 = new Button();
             button5 = new Button();
+            button1 = new Button();
             panel2.SuspendLayout();
             gradientPanel7.SuspendLayout();
             gradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Photo).BeginInit();
             applicationPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)girlPhoto).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)boyPhoto).BeginInit();
             gradientPanel3.SuspendLayout();
             gradientPanel4.SuspendLayout();
             gradientPanel5.SuspendLayout();
             gradientPanel6.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)boyPhoto).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)girlPhoto).BeginInit();
             gradientPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -405,6 +405,28 @@
             applicationPanel.Size = new Size(801, 90);
             applicationPanel.TabIndex = 1;
             // 
+            // girlPhoto
+            // 
+            girlPhoto.BackColor = Color.Transparent;
+            girlPhoto.Image = (Image)resources.GetObject("girlPhoto.Image");
+            girlPhoto.Location = new Point(653, 12);
+            girlPhoto.Name = "girlPhoto";
+            girlPhoto.Size = new Size(74, 73);
+            girlPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
+            girlPhoto.TabIndex = 27;
+            girlPhoto.TabStop = false;
+            // 
+            // boyPhoto
+            // 
+            boyPhoto.BackColor = Color.Transparent;
+            boyPhoto.Image = (Image)resources.GetObject("boyPhoto.Image");
+            boyPhoto.Location = new Point(71, 12);
+            boyPhoto.Name = "boyPhoto";
+            boyPhoto.Size = new Size(79, 73);
+            boyPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
+            boyPhoto.TabIndex = 26;
+            boyPhoto.TabStop = false;
+            // 
             // label2
             // 
             label2.BackColor = Color.FromArgb(192, 0, 192);
@@ -538,28 +560,6 @@
             panel1.Size = new Size(202, 361);
             panel1.TabIndex = 2;
             // 
-            // boyPhoto
-            // 
-            boyPhoto.BackColor = Color.Transparent;
-            boyPhoto.Image = (Image)resources.GetObject("boyPhoto.Image");
-            boyPhoto.Location = new Point(71, 12);
-            boyPhoto.Name = "boyPhoto";
-            boyPhoto.Size = new Size(79, 73);
-            boyPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
-            boyPhoto.TabIndex = 26;
-            boyPhoto.TabStop = false;
-            // 
-            // girlPhoto
-            // 
-            girlPhoto.BackColor = Color.Transparent;
-            girlPhoto.Image = (Image)resources.GetObject("girlPhoto.Image");
-            girlPhoto.Location = new Point(653, 12);
-            girlPhoto.Name = "girlPhoto";
-            girlPhoto.Size = new Size(74, 73);
-            girlPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
-            girlPhoto.TabIndex = 27;
-            girlPhoto.TabStop = false;
-            // 
             // gradientPanel1
             // 
             gradientPanel1.Angle = 0F;
@@ -571,23 +571,6 @@
             gradientPanel1.Name = "gradientPanel1";
             gradientPanel1.Size = new Size(196, 43);
             gradientPanel1.TabIndex = 49;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Transparent;
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(3, 24);
-            button1.Name = "button1";
-            button1.Size = new Size(191, 16);
-            button1.TabIndex = 4;
-            button1.Text = "Рекомендации";
-            button1.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -605,6 +588,23 @@
             button5.TabIndex = 5;
             button5.Text = "Уведомления";
             button5.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe Print", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(3, 24);
+            button1.Name = "button1";
+            button1.Size = new Size(191, 16);
+            button1.TabIndex = 4;
+            button1.Text = "Рекомендации";
+            button1.UseVisualStyleBackColor = false;
             // 
             // HomeForm
             // 
@@ -625,13 +625,13 @@
             ((System.ComponentModel.ISupportInitialize)Photo).EndInit();
             applicationPanel.ResumeLayout(false);
             applicationPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)girlPhoto).EndInit();
+            ((System.ComponentModel.ISupportInitialize)boyPhoto).EndInit();
             gradientPanel3.ResumeLayout(false);
             gradientPanel4.ResumeLayout(false);
             gradientPanel5.ResumeLayout(false);
             gradientPanel6.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)boyPhoto).EndInit();
-            ((System.ComponentModel.ISupportInitialize)girlPhoto).EndInit();
             gradientPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -652,15 +652,8 @@
         private Label surnameLabel;
         private GradientPanel gradientPanel2;
         private Button redactionButton;
-        private Label sexField;
-        private Label cityField;
-        private Label BirhdayField;
-        private Label surnameField;
-        private Label nameField;
-        private Label emailField;
         private Label numberLabel;
         private Label emailLabel;
-        private Label numberField;
         private GradientPanel gradientPanel3;
         private Button button2;
         private GradientPanel gradientPanel4;
@@ -678,5 +671,12 @@
         private GradientPanel gradientPanel1;
         private Button button5;
         private Button button1;
+        public Label sexField;
+        public Label cityField;
+        public Label BirhdayField;
+        public Label surnameField;
+        public Label nameField;
+        public Label emailField;
+        public Label numberField;
     }
 }

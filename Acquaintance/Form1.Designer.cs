@@ -39,11 +39,11 @@
             loginButton = new Button();
             loginField = new TextBox();
             loginLabel = new Label();
-            passwordFields = new TextBox();
+            passwordField = new TextBox();
             passwondLabel = new Label();
             comboBox1 = new ComboBox();
             registrButton = new Button();
-            comboBox2 = new ComboBox();
+            choice = new ComboBox();
             label1 = new Label();
             entryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)girlPhoto).BeginInit();
@@ -163,6 +163,7 @@
             loginButton.TabIndex = 2;
             loginButton.Text = "Войти";
             loginButton.UseVisualStyleBackColor = false;
+            loginButton.Click += loginButton_Click;
             // 
             // loginField
             // 
@@ -185,16 +186,16 @@
             loginLabel.TabIndex = 3;
             loginLabel.Text = "Логин";
             // 
-            // passwordFields
+            // passwordField
             // 
-            passwordFields.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            passwordFields.Location = new Point(45, 290);
-            passwordFields.Name = "passwordFields";
-            passwordFields.Size = new Size(326, 32);
-            passwordFields.TabIndex = 4;
-            passwordFields.Text = "Введите пароль...";
-            passwordFields.Enter += passwordFields_Enter;
-            passwordFields.Leave += passwordFields_Leave;
+            passwordField.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            passwordField.Location = new Point(45, 290);
+            passwordField.Name = "passwordField";
+            passwordField.Size = new Size(326, 32);
+            passwordField.TabIndex = 4;
+            passwordField.Text = "Введите пароль...";
+            passwordField.Enter += passwordFields_Enter;
+            passwordField.Leave += passwordFields_Leave;
             // 
             // passwondLabel
             // 
@@ -230,14 +231,15 @@
             registrButton.Text = "Зарегистрироваться";
             registrButton.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // choice
             // 
-            comboBox2.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(45, 135);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(326, 31);
-            comboBox2.TabIndex = 9;
+            choice.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            choice.FormattingEnabled = true;
+            choice.Items.AddRange(new object[] { "Пользователь", "Администратор " });
+            choice.Location = new Point(45, 135);
+            choice.Name = "choice";
+            choice.Size = new Size(326, 31);
+            choice.TabIndex = 9;
             // 
             // label1
             // 
@@ -256,11 +258,11 @@
             BackColor = Color.White;
             ClientSize = new Size(419, 459);
             Controls.Add(label1);
-            Controls.Add(comboBox2);
+            Controls.Add(choice);
             Controls.Add(registrButton);
             Controls.Add(comboBox1);
             Controls.Add(passwondLabel);
-            Controls.Add(passwordFields);
+            Controls.Add(passwordField);
             Controls.Add(loginLabel);
             Controls.Add(loginField);
             Controls.Add(gradientPanel2);
@@ -287,13 +289,13 @@
         private Button CloseButton;
         private TextBox loginField;
         private Label loginLabel;
-        private TextBox passwordFields;
+        private TextBox passwordField;
         private Label passwondLabel;
         private ComboBox comboBox1;
         private Button registrButton;
         private PictureBox girlPhoto;
         private PictureBox boyPhoto;
-        private ComboBox comboBox2;
+        private ComboBox choice;
         private Label label1;
     }
 }

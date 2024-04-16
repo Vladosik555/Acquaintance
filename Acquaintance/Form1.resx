@@ -121,7 +121,7 @@
   <data name="girlPhoto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAAHdElNRQfoBAkXJgUUlhhbAAAA
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAHdElNRQfoBAkXJgUUlhhbAAAA
         GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAA7oZJREFUeF7snQV4FdfW979CSELcEyIk
         hJAQIU48WAxIgkuhlBYphSLFi5YWaNEqlAptqQt1v3V3l1t3b6/7fa/tb/0n5PTsmXWiR2bO2et5fs/7
         3nIys2fvPbNm9l7rv/6fMmU9sCAihxhPnEbsIW4mHiWeIV4jPiQ+I35PfHPs/3+LwL89RvyKuJbYSSwl
@@ -1146,7 +1146,7 @@
   <data name="boyPhoto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAM0oSURBVHhe7J0H
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAM0oSURBVHhe7J0H
         fBVV9scXUgipBJJQkkAILRBCAoQaeu9deu9IkaIUQVCQrggKCCKgKBZEUcSuqNi7gr2svbGu66qr+3fV
         +z+/IXnOnTkv9ZV5L+f3+Xw/u5J5M/fembnnzr3nnvM3kUgkEnlV1YiOxEziKuIY8RTxDvEdoYhfie/z
         +Zp4lbiX2EcsJvD7aEIkEolEIpEDVYHIJOYQtxBfEDDwnuB34jSxkWhF4FoikUgkEon8pAhiALGfOEtw
